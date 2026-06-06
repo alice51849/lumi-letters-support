@@ -301,5 +301,21 @@
   </div>
 </footer>
 
+<!-- 背景音樂（與遊戲相同主題曲）。瀏覽器政策：需使用者互動才能播放 -->
+<audio id="bgm" loop preload="none" src="bgm.mp3"></audio>
+<button id="musicBtn" aria-label="Toggle music" style="position:fixed;right:18px;bottom:18px;z-index:90;width:58px;height:58px;border-radius:50%;border:2px solid #fff;cursor:pointer;background:linear-gradient(135deg,#46c184,#2fa56a);box-shadow:0 8px 22px -6px rgba(30,110,70,.6);font-size:24px;color:#fff;display:flex;align-items:center;justify-content:center">🎵</button>
+<script>
+  (function(){
+    var a=document.getElementById('bgm'), b=document.getElementById('musicBtn'), playing=false;
+    a.volume=0.45;
+    function play(){ a.play().then(function(){playing=true;b.textContent='🔊';}).catch(function(){}); }
+    function pause(){ a.pause(); playing=false; b.textContent='🎵'; }
+    b.addEventListener('click', function(e){ e.stopPropagation(); playing?pause():play(); });
+    function firstTouch(){ if(!playing) play(); document.removeEventListener('click', firstTouch); document.removeEventListener('touchstart', firstTouch); }
+    document.addEventListener('click', firstTouch);
+    document.addEventListener('touchstart', firstTouch);
+  })();
+</script>
+
 </body>
 </html>
