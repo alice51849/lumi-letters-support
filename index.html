@@ -26,6 +26,11 @@
   body{margin:0; color:var(--ink); background:var(--bg);
     font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI","PingFang TC","Noto Sans TC",Roboto,"Helvetica Neue",Arial,sans-serif;
     font-size:16.5px; line-height:1.7; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;}
+  /* 背景飄落的半透明 ABC（呼應字母主題） */
+  .abcfall{position:fixed; inset:0; overflow:hidden; pointer-events:none; z-index:0}
+  .abcfall span{position:absolute; top:-14%; font-weight:800; color:rgba(255,200,80,0.18); font-family:"Baloo 2","PingFang TC",system-ui,sans-serif; text-shadow:0 0 14px rgba(255,190,70,.25); animation:abcdrop linear infinite}
+  @keyframes abcdrop{0%{transform:translateY(-16vh) rotate(0deg); opacity:0} 12%{opacity:1} 88%{opacity:1} 100%{transform:translateY(120vh) rotate(36deg); opacity:0}}
+  body>*:not(.abcfall){position:relative; z-index:1}
   a{color:var(--green-ink); text-decoration:none}
   .container{max-width:var(--maxw); margin:0 auto; padding:0 24px}
   .zh{color:var(--muted); font-weight:500}
@@ -150,6 +155,20 @@
 </style>
 </head>
 <body>
+<div class="abcfall" aria-hidden="true">
+  <span style="left:6%;  font-size:54px; animation-duration:17s; animation-delay:0s">A</span>
+  <span style="left:18%; font-size:38px; animation-duration:22s; animation-delay:6s">b</span>
+  <span style="left:30%; font-size:64px; animation-duration:19s; animation-delay:11s">C</span>
+  <span style="left:44%; font-size:44px; animation-duration:24s; animation-delay:3s">d</span>
+  <span style="left:57%; font-size:58px; animation-duration:16s; animation-delay:9s">E</span>
+  <span style="left:69%; font-size:40px; animation-duration:21s; animation-delay:14s">f</span>
+  <span style="left:80%; font-size:60px; animation-duration:18s; animation-delay:5s">G</span>
+  <span style="left:90%; font-size:46px; animation-duration:23s; animation-delay:12s">h</span>
+  <span style="left:12%; font-size:48px; animation-duration:20s; animation-delay:16s">M</span>
+  <span style="left:36%; font-size:52px; animation-duration:25s; animation-delay:8s">o</span>
+  <span style="left:63%; font-size:50px; animation-duration:18s; animation-delay:19s">R</span>
+  <span style="left:86%; font-size:42px; animation-duration:22s; animation-delay:2s">s</span>
+</div>
 
 <header class="nav">
   <div class="container nav-inner">
