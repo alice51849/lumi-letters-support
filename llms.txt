@@ -1,0 +1,19 @@
+# Lumi Letters and Lumi Letters Pro — official support
+
+> Official support, privacy, App Store, and guide links for Lumi Letters and Lumi Letters Pro.
+
+## Apps
+
+- [Lumi Letters on the App Store](https://apps.apple.com/app/id6778748533)
+- [Lumi Letters independent guide](https://alice51849.github.io/ios-app-guide/guides/lumiletters.html)
+- [Lumi Letters Pro on the App Store](https://apps.apple.com/app/id6778491147)
+- [Lumi Letters Pro independent guide](https://alice51849.github.io/ios-app-guide/guides/lumiletterspro.html)
+
+## Support
+
+- [Official support site](https://alice51849.github.io/lumi-letters-support/)
+- [Privacy policy](https://alice51849.github.io/lumi-letters-support/privacy.html)
+
+## Portfolio
+
+- [All public iOS apps](https://alice51849.github.io/ios-app-guide/apps/index.html)
