@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumi Letters Lite — Hilfe, FAQ und Fehlerbehebung</title>
+<meta name="description" content="Antworten auf die Fragen, die zu Lumi Letters Lite am häufigsten gestellt werden, dazu Schritte zur Fehlerbehebung und wie Sie einen Menschen erreichen.">
+<link rel="canonical" href="https://alice51849.github.io/lumi-letters-support/help.de-DE.html">
+<link rel="alternate" hreflang="en-US" href="https://alice51849.github.io/lumi-letters-support/help.html">
+<link rel="alternate" hreflang="ar-SA" href="https://alice51849.github.io/lumi-letters-support/help.ar-SA.html">
+<link rel="alternate" hreflang="de-DE" href="https://alice51849.github.io/lumi-letters-support/help.de-DE.html">
+<link rel="alternate" hreflang="en-AU" href="https://alice51849.github.io/lumi-letters-support/help.en-AU.html">
+<link rel="alternate" hreflang="en-CA" href="https://alice51849.github.io/lumi-letters-support/help.en-CA.html">
+<link rel="alternate" hreflang="en-GB" href="https://alice51849.github.io/lumi-letters-support/help.en-GB.html">
+<link rel="alternate" hreflang="fr-FR" href="https://alice51849.github.io/lumi-letters-support/help.fr-FR.html">
+<link rel="alternate" hreflang="hi" href="https://alice51849.github.io/lumi-letters-support/help.hi.html">
+<link rel="alternate" hreflang="ja" href="https://alice51849.github.io/lumi-letters-support/help.ja.html">
+<link rel="alternate" hreflang="ko" href="https://alice51849.github.io/lumi-letters-support/help.ko.html">
+<link rel="alternate" hreflang="pt-BR" href="https://alice51849.github.io/lumi-letters-support/help.pt-BR.html">
+<link rel="alternate" hreflang="th" href="https://alice51849.github.io/lumi-letters-support/help.th.html">
+<link rel="alternate" hreflang="vi" href="https://alice51849.github.io/lumi-letters-support/help.vi.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://alice51849.github.io/lumi-letters-support/help.zh-Hant.html">
+<link rel="alternate" hreflang="x-default" href="https://alice51849.github.io/lumi-letters-support/help.html">
+<meta property="og:title" content="Lumi Letters Lite — Hilfe, FAQ und Fehlerbehebung">
+<meta property="og:description" content="Antworten auf die Fragen, die zu Lumi Letters Lite am häufigsten gestellt werden, dazu Schritte zur Fehlerbehebung und wie Sie einen Menschen erreichen.">
+<meta property="og:url" content="https://alice51849.github.io/lumi-letters-support/help.de-DE.html">
+<meta property="og:type" content="article">
+<style>
+  :root{
+    --ink:#1c2a1f; --ink2:#3f5142; --muted:#7b8a7e;
+    --line:#e8efe6; --line2:#dcebd8;
+    --bg:#fbfdf8; --panel:#ffffff;
+    --green:#2fa56a; --green-ink:#1f8b57; --green-soft:#e9f8ef;
+    --gold:#e0991c; --gold-light:#f6c64e;
+    --pink:#ff8fbf; --berry:#d9558c;
+    --shadow:0 1px 2px rgba(20,40,25,.04), 0 14px 36px -18px rgba(30,110,70,.26);
+    --shadow-lg:0 3px 8px rgba(20,40,25,.06), 0 36px 70px -30px rgba(30,110,70,.38);
+    --radius:20px; --maxw:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; color:var(--ink); background:var(--bg);
+    font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI","PingFang TC","Noto Sans TC",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:16.5px; line-height:1.7; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;}
+  /* 背景飄落的半透明 ABC（呼應字母主題） */
+  .abcfall{position:fixed; inset:0; overflow:hidden; pointer-events:none; z-index:0}
+  .abcfall span{position:absolute; top:-14%; font-weight:800; color:rgba(255,200,80,0.18); font-family:"Baloo 2","PingFang TC",system-ui,sans-serif; text-shadow:0 0 14px rgba(255,190,70,.25); animation:abcdrop linear infinite}
+  @keyframes abcdrop{0%{transform:translateY(-16vh) rotate(0deg); opacity:0} 12%{opacity:1} 88%{opacity:1} 100%{transform:translateY(120vh) rotate(36deg); opacity:0}}
+  body>*:not(.abcfall){position:relative; z-index:1}
+  a{color:var(--green-ink); text-decoration:none}
+  .container{max-width:var(--maxw); margin:0 auto; padding:0 24px}
+  .zh{color:var(--muted); font-weight:500}
+  .eyebrow{font-size:.74rem; font-weight:800; letter-spacing:2.4px; text-transform:uppercase; color:var(--green); margin:0 0 12px}
+
+  @media (prefers-reduced-motion:no-preference){
+    .reveal{opacity:0; transform:translateY(16px); animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+    .d1{animation-delay:.06s}.d2{animation-delay:.15s}.d3{animation-delay:.24s}.d4{animation-delay:.33s}
+    @keyframes rise{to{opacity:1; transform:none}}
+    .float{animation:float 6s ease-in-out infinite}
+    .float.s{animation-duration:7.5s}.float.l{animation-duration:5s}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+    .twinkle{animation:tw 3.4s ease-in-out infinite}
+    @keyframes tw{0%,100%{opacity:.3; transform:scale(.82)}50%{opacity:1; transform:scale(1)}}
+  }
+
+  header.nav{position:sticky; top:0; z-index:60; background:rgba(251,253,248,.74);
+    backdrop-filter:saturate(180%) blur(16px); -webkit-backdrop-filter:saturate(180%) blur(16px); border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex; align-items:center; justify-content:space-between; height:66px}
+  .brand{display:flex; align-items:center; gap:12px}
+  .brand img{width:40px; height:40px; border-radius:12px; box-shadow:0 4px 12px -2px rgba(30,110,70,.4)}
+  .brand .name{font-weight:800; font-size:1.05rem; line-height:1.15}
+  .brand .name small{display:block; font-weight:600; font-size:.7rem; color:var(--muted); letter-spacing:.5px}
+  .nav-links{display:flex; gap:4px; align-items:center}
+  .nav-links a{color:var(--ink2); font-weight:600; font-size:.92rem; padding:9px 15px; border-radius:11px; transition:.15s}
+  .nav-links a:hover{color:var(--green-ink); background:var(--green-soft)}
+  .nav-links a.cta{color:#fff; background:linear-gradient(135deg,#46c184,var(--green)); box-shadow:0 10px 22px -10px var(--green); margin-left:6px}
+  @media (max-width:720px){ .nav-links a:not(.cta){display:none} }
+
+  .hero{position:relative; overflow:hidden; text-align:center; padding:92px 0 96px;
+    background:url("hero.png") center 30%/cover no-repeat}
+  .hero::after{content:""; position:absolute; inset:0; pointer-events:none;
+    background:radial-gradient(920px 480px at 50% 30%, rgba(255,255,255,.62), rgba(255,255,255,.14) 56%, transparent 74%),
+              linear-gradient(180deg, rgba(251,253,248,0) 58%, var(--bg) 100%)}
+  .hero .container{position:relative; z-index:2}
+  .hero .mascot{width:clamp(240px,40vw,340px); height:auto; filter:drop-shadow(0 22px 30px rgba(40,90,55,.4))}
+  .deco{position:absolute; z-index:1; pointer-events:none}
+  .deco.mush{width:78px; left:calc(50% - 230px); top:120px; filter:drop-shadow(0 10px 16px rgba(40,90,55,.3))}
+  .deco.star{width:54px; right:calc(50% - 240px); top:74px}
+  .deco.star2{width:34px; left:calc(50% - 290px); top:300px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem); line-height:1.08; margin:.2em 0 .22em; letter-spacing:-1px; font-weight:850; color:#fff; text-shadow:0 2px 22px rgba(30,70,45,.5)}
+  .hero h1 .grad{background:linear-gradient(105deg,#ffe7a0 10%,#ffd24a); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .hero h1 .zh{display:block; font-size:.42em; font-weight:700; letter-spacing:0; margin-top:.5em; color:#f3fff6; text-shadow:0 2px 14px rgba(20,50,30,.6)}
+  .hero p.sub{font-size:1.16rem; color:#f4fbf2; max-width:40em; margin:0 auto; font-weight:500; text-shadow:0 1px 12px rgba(20,50,30,.65)}
+  .hero p.sub .zh{display:block; font-size:.86rem; margin-top:8px; color:#e7f6e9}
+  .actions{display:flex; gap:13px; justify-content:center; flex-wrap:wrap; margin-top:30px}
+  .btn{display:inline-flex; align-items:center; gap:9px; font-weight:700; font-size:1rem; padding:14px 26px; border-radius:14px; transition:.16s; border:1px solid transparent; cursor:pointer}
+  .btn.primary{color:#fff; background:linear-gradient(135deg,#46c184,var(--green)); box-shadow:0 16px 34px -14px var(--green)}
+  .btn.primary:hover{transform:translateY(-2px); filter:brightness(1.05)}
+  .btn.ghost{color:var(--ink2); background:rgba(255,255,255,.9); border-color:var(--line2); box-shadow:var(--shadow)}
+  .btn.ghost:hover{border-color:#bfe0c8; color:var(--green-ink); transform:translateY(-2px)}
+
+  .trust{margin-top:-46px; position:relative; z-index:5}
+  .trust-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px}
+  .trust-card{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:22px 20px; box-shadow:var(--shadow)}
+  .trust-card .ic{width:44px; height:44px; border-radius:13px; display:grid; place-items:center; font-size:1.25rem; margin-bottom:13px; background:linear-gradient(140deg,var(--green-soft),#fff); border:1px solid var(--line2)}
+  .trust-card b{display:block; font-size:1rem}
+  .trust-card span{font-size:.82rem; color:var(--muted)}
+  @media (max-width:820px){ .trust-grid{grid-template-columns:repeat(2,1fr)} }
+
+  section.block{padding:74px 0}
+  .section-head{max-width:680px; margin:0 auto 40px; text-align:center}
+  .section-head h2{font-size:2rem; margin:0 0 .2em; letter-spacing:-.5px; font-weight:850}
+  .section-head h2 .zh{font-size:.6em; font-weight:700}
+  .section-head p{color:var(--muted); margin:0}
+
+  .values{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+  .value{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:28px 26px; box-shadow:var(--shadow); transition:.18s}
+  .value:hover{transform:translateY(-4px); box-shadow:var(--shadow-lg); border-color:#cfe7d4}
+  .value .ic{font-size:1.7rem; margin-bottom:14px}
+  .value h3{margin:0 0 6px; font-size:1.18rem}
+  .value p{margin:0; color:var(--ink2); font-size:.95rem}
+  .value p .zh{display:block; color:var(--muted); font-size:.84rem; margin-top:5px}
+  @media (max-width:820px){ .values{grid-template-columns:1fr} }
+
+  .contact-card{display:flex; align-items:center; justify-content:space-between; gap:30px; flex-wrap:wrap;
+    background:linear-gradient(135deg,#fff,#f4fbf3); border:1px solid var(--line2); border-radius:26px; padding:38px 40px; box-shadow:var(--shadow-lg)}
+  .contact-card .txt h3{margin:0 0 6px; font-size:1.3rem}
+  .contact-card .txt p{margin:0; color:var(--ink2); font-size:.97rem}
+  .contact-card .txt p .zh{display:block; font-size:.84rem; margin-top:4px}
+  .mailrow{display:flex; align-items:center; gap:10px; margin-top:15px; font-weight:600; color:var(--ink2); font-size:.9rem}
+  .mailrow .dot{width:9px; height:9px; border-radius:50%; background:#27c08a; box-shadow:0 0 0 4px #27c08a22}
+
+  .faq{max-width:840px; margin:0 auto; display:grid; gap:13px}
+  details.qa{background:var(--panel); border:1px solid var(--line2); border-radius:15px; padding:0 22px; box-shadow:var(--shadow); transition:border-color .15s}
+  details.qa[open]{border-color:#c9e6d0}
+  details.qa summary{list-style:none; cursor:pointer; padding:19px 0; font-weight:700; font-size:1.05rem; display:flex; align-items:center; justify-content:space-between; gap:16px}
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary .q .zh{display:block; font-weight:500; font-size:.82rem; margin-top:2px}
+  details.qa summary .plus{flex:0 0 27px; width:27px; height:27px; border-radius:9px; border:1px solid var(--line2); display:grid; place-items:center; color:var(--green); font-size:1.15rem; transition:.2s; background:#f6fcf7}
+  details.qa[open] summary .plus{transform:rotate(45deg); background:var(--green); color:#fff; border-color:var(--green)}
+  details.qa .body{padding:0 0 20px; color:var(--ink2); font-size:.97rem}
+  details.qa .body .zh{display:block; color:var(--muted); font-size:.86rem; margin-top:8px}
+
+  .privacy-wrap{max-width:880px; margin:0 auto; background:var(--panel); border:1px solid var(--line2); border-radius:26px; box-shadow:var(--shadow-lg); overflow:hidden}
+  .privacy-top{padding:32px 38px; border-bottom:1px solid var(--line); background:linear-gradient(135deg,#f4fbf3,#fff)}
+  .privacy-top .meta{display:inline-flex; align-items:center; gap:8px; font-size:.8rem; color:var(--muted); font-weight:600; background:#fff; border:1px solid var(--line2); padding:6px 13px; border-radius:999px}
+  .privacy-top h2{margin:14px 0 4px; font-size:1.6rem; letter-spacing:-.4px}
+  .pill-list{list-style:none; padding:0; margin:18px 0 0; display:grid; grid-template-columns:repeat(2,1fr); gap:13px}
+  .pill-list li{display:flex; gap:11px; align-items:flex-start; font-size:.94rem}
+  .pill-list .chk{flex:0 0 22px; width:22px; height:22px; border-radius:50%; display:grid; place-items:center; background:#e9faf3; color:#1f9d6b; font-weight:900; font-size:.78rem; margin-top:2px}
+  .pill-list .zh{color:var(--muted); font-size:.82rem}
+  .privacy-body{padding:34px 38px}
+  .privacy-body h3{font-size:1.08rem; margin:28px 0 5px; font-weight:800; display:flex; align-items:center; gap:10px}
+  .privacy-body h3:first-child{margin-top:0}
+  .privacy-body h3 .num{font-size:.72rem; color:var(--green); border:1px solid var(--line2); border-radius:7px; padding:2px 8px; font-weight:800}
+  .privacy-body p{color:var(--ink2); margin:.2em 0 0; font-size:.96rem}
+  .privacy-body p .zh{display:block; color:var(--muted); font-size:.85rem; margin-top:5px}
+  @media (max-width:680px){ .pill-list{grid-template-columns:1fr} .privacy-top,.privacy-body{padding:26px 22px} }
+
+  footer.site{border-top:1px solid var(--line); margin-top:30px; background:#fff}
+  .foot-inner{display:flex; justify-content:space-between; gap:34px; flex-wrap:wrap; padding:46px 0 34px}
+  .foot-brand{max-width:360px}
+  .foot-brand .lock{display:flex; align-items:center; gap:11px; margin-bottom:13px}
+  .foot-brand .lock img{width:34px; height:34px; border-radius:10px}
+  .foot-brand .lock b{font-weight:800; font-size:1.05rem}
+  .foot-brand p{color:var(--muted); font-size:.88rem; margin:0}
+  .foot-col h4{font-size:.74rem; letter-spacing:1.3px; text-transform:uppercase; color:var(--muted); margin:0 0 13px}
+  .foot-col a, .foot-col span{display:block; color:var(--ink2); font-size:.92rem; padding:4px 0}
+  .foot-col a:hover{color:var(--green-ink)}
+  .foot-bottom{border-top:1px solid var(--line); padding:20px 0; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; color:var(--muted); font-size:.82rem}
+</style>
+<style>
+.helpdoc{max-width:820px;margin:0 auto;padding:28px 20px 64px;line-height:1.75}
+.helpdoc h1{font-size:clamp(26px,4.4vw,38px);line-height:1.25;margin:.2em 0 .35em}
+.helpdoc h2{font-size:clamp(19px,2.8vw,24px);margin:2.2em 0 .6em;scroll-margin-top:20px}
+.helpdoc h3{font-size:16.5px;margin:1.6em 0 .35em}
+.helpdoc .lede{font-size:17.5px;opacity:.85;margin:0 0 1.6em}
+.helpdoc ul{padding-left:1.15em}
+.helpdoc li{margin:.35em 0}
+.helpdoc .hd-nav{display:flex;flex-wrap:wrap;gap:14px;font-size:14px;margin:0 0 22px;opacity:.8}
+.helpdoc .hd-toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;padding:0;list-style:none}
+.helpdoc .hd-toc a{display:inline-block;padding:6px 12px;border:1px solid currentColor;border-radius:999px;font-size:13.5px;opacity:.75;text-decoration:none}
+.helpdoc .hd-specs{width:100%;border-collapse:collapse;margin:.6em 0;font-size:15px}
+.helpdoc .hd-specs th{text-align:left;font-weight:600;padding:9px 12px 9px 0;white-space:nowrap;vertical-align:top;opacity:.7}
+.helpdoc .hd-specs td{padding:9px 0;border-bottom:1px solid rgba(128,128,128,.18)}
+.helpdoc .hd-q{margin:1.5em 0 .3em;font-weight:650;font-size:16.5px}
+.helpdoc .hd-a{margin:0 0 .2em}
+.helpdoc .hd-cta{display:inline-block;margin:10px 8px 10px 0;padding:11px 20px;border-radius:999px;border:1px solid currentColor;font-weight:600;text-decoration:none}
+.helpdoc .hd-note{font-size:13px;opacity:.62;margin-top:2.6em;border-top:1px solid rgba(128,128,128,.2);padding-top:14px}
+.helpdoc .hd-langs{margin:2.4em 0 0;font-size:13.5px;line-height:2;opacity:.75;border-top:1px solid rgba(128,128,128,.2);padding-top:14px}
+.helpdoc .hd-langs a{display:inline-block;margin:0 10px 0 0;text-decoration:none;border-bottom:1px solid rgba(128,128,128,.35)}
+@media (max-width:520px){.helpdoc .hd-specs th{display:block;padding-bottom:0}.helpdoc .hd-specs td{display:block;padding-top:2px}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "url": "https://alice51849.github.io/lumi-letters-support/help.de-DE.html", "name": "Lumi Letters Lite — Hilfe, FAQ und Fehlerbehebung", "inLanguage": "de-DE", "mainEntity": [{"@type": "Question", "name": "Funktioniert Lumi Letters Lite auch ohne Internetverbindung?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Im App-Store-Eintrag von Lumi Letters Lite steht, dass die eigentliche Verarbeitung auf dem Gerät stattfindet. Die App funktioniert deshalb auch im Flugmodus oder ohne Empfang. Die App herunterzuladen und einen Kauf abzuschließen, erfordert weiterhin eine Verbindung, weil beides über den App Store läuft."}}, {"@type": "Question", "name": "Ist das ein Abo?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Der App-Store-Eintrag beschreibt einen einmaligen Kauf und kein wiederkehrendes Abo. Was genau berechnet wird, können Sie vor dem Kauf jederzeit auf der App-Store-Produktseite nachlesen; laufende Abos sehen Sie unter Einstellungen → Ihr Name → Abonnements."}}, {"@type": "Question", "name": "Wo landen meine exportierten Dateien?", "acceptedAnswer": {"@type": "Answer", "text": "Exporte laufen über das iOS-Teilen-Menü – das Ziel ist also das, was Sie auswählen: Dateien (Auf meinem iPhone oder iCloud Drive), Mail, Nachrichten oder eine andere App. Wenn Sie eine Datei später nicht wiederfinden, öffnen Sie die Dateien-App und sehen Sie unter „Zuletzt benutzt“ nach."}}, {"@type": "Question", "name": "Ich habe bezahlt, die App zeigt aber weiterhin die gesperrte Version", "acceptedAnswer": {"@type": "Answer", "text": "Einmalkäufe hängen an dem Apple-Account, mit dem gekauft wurde. Melden Sie sich mit genau diesem Account an (Einstellungen → Ihr Name → Medien & Käufe) und nutzen Sie dann die Wiederherstellen-Option in der App, falls vorhanden, oder installieren Sie die App über die Liste „Gekauft“ im App Store neu. Käufe mit einem anderen Apple-Account – auch dem eines Familienmitglieds – erscheinen nicht."}}, {"@type": "Question", "name": "Ich habe ein neues iPhone – muss ich noch einmal bezahlen?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Melden Sie sich auf dem neuen Gerät mit demselben Apple-Account an und laden Sie die App erneut. Der Kauf gehört zum Account, nicht zum Gerät."}}, {"@type": "Question", "name": "Wie fordere ich eine Rückerstattung an?", "acceptedAnswer": {"@type": "Answer", "text": "Rückerstattungen für App-Store-Käufe wickelt Apple ab, nicht der Entwickler. Gehen Sie auf reportaproblem.apple.com, melden Sie sich an, suchen Sie den Kauf und wählen Sie „Rückerstattung anfordern“. Wir können eine Entscheidung von Apple weder auslösen noch beschleunigen oder aufheben – schreiben Sie uns aber gern, was schiefgelaufen ist, damit wir es beheben können."}}, {"@type": "Question", "name": "Wie lösche ich die App samt allem, was sie gespeichert hat?", "acceptedAnswer": {"@type": "Answer", "text": "App-Symbol gedrückt halten → „App entfernen“ → „App löschen“. Beim Löschen einer iOS-App verschwindet auch ihre Sandbox – die auf dem Gerät gespeicherten Dokumente und Einstellungen gehen also mit. Exportieren Sie vorher alles, was Sie behalten möchten. Was die App speichert und wo, steht in unserer Datenschutzerklärung."}}, {"@type": "Question", "name": "Wie stelle ich sicher, dass ich die neueste Version habe?", "acceptedAnswer": {"@type": "Answer", "text": "Öffnen Sie den App Store, tippen Sie oben rechts auf Ihr Profilbild und ziehen Sie die Liste der ausstehenden Updates nach unten, um sie zu aktualisieren. Erscheint die App dort, tippen Sie auf „Update“. Mit Einstellungen → App Store → App-Updates bleibt das dauerhaft automatisch."}}, {"@type": "Question", "name": "Wie verhindere ich, dass mein Kind versehentlich etwas kauft?", "acceptedAnswer": {"@type": "Answer", "text": "iOS kann das auf Systemebene blockieren, und das ist zuverlässiger als alles, was eine App tun kann: Einstellungen → Bildschirmzeit → Beschränkungen → „iTunes & App Store-Käufe“ → In-App-Käufe → Nicht erlauben. Vergeben Sie einen Bildschirmzeit-Code, der sich vom Gerätecode unterscheidet, damit Ihr Kind ihn nicht selbst aufheben kann."}}, {"@type": "Question", "name": "Wie halte ich mein Kind in einer einzigen App?", "acceptedAnswer": {"@type": "Answer", "text": "Nutzen Sie den geführten Zugriff: Einstellungen → Bedienungshilfen → Geführter Zugriff, einschalten und einen Code festlegen. Öffnen Sie danach die App und drücken Sie dreimal die Seitentaste, um das Gerät darin zu fixieren. Zum Beenden erneut dreimal drücken und den Code eingeben."}}, {"@type": "Question", "name": "Welche Geräte und welche iOS-Version braucht Lumi Letters Lite?", "acceptedAnswer": {"@type": "Answer", "text": "Sehen Sie auf der App-Store-Produktseite nach – der Abschnitt „Informationen“ dort ist immer die verbindliche, aktuelle Auskunft zu Kompatibilität, Größe und Sprachen."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Lumi Letters Lite", "operatingSystem": "iOS", "applicationCategory": "Education", "url": "https://apps.apple.com/app/id6778748533", "installUrl": "https://apps.apple.com/app/id6778748533", "softwareHelp": {"@type": "CreativeWork", "url": "https://alice51849.github.io/lumi-letters-support/help.de-DE.html"}}</script>
+</head>
+<body>
+<main class="helpdoc">
+<p class="hd-nav"><a href="./">Support-Startseite</a><a href="privacy.html">Datenschutzerklärung</a><a href="https://apps.apple.com/app/id6778748533" rel="noopener">Im App Store ansehen</a></p>
+<h1>Lumi Letters Lite — Hilfe &amp; FAQ</h1>
+<p class="lede">Antworten auf die Fragen, die zu Lumi Letters Lite am häufigsten gestellt werden, dazu Schritte zur Fehlerbehebung und wie Sie einen Menschen erreichen.</p>
+<p class="hd-toc-label"><strong>Auf dieser Seite</strong></p>
+<ul class="hd-toc"><li><a href="#about">Was Lumi Letters Lite macht</a></li><li><a href="#features">Das ist enthalten</a></li><li><a href="#specs">Auf einen Blick</a></li><li><a href="#faq">Häufige Fragen</a></li><li><a href="#troubleshooting">Fehlerbehebung</a></li><li><a href="#more">Weitere Hilfeseiten desselben Entwicklers</a></li><li><a href="#contact">Immer noch ein Problem? Schreiben Sie uns</a></li></ul>
+<section id="about"><h2>Was Lumi Letters Lite macht</h2><p>Ein sanfter Start ins englische ABC für kleine Entdecker. Lumi Letters Lite verbindet niedliche Planeten mit ruhigem, kindgerechtem Lernen für Kinder von 3 bis 6 Jahren. Perfekt für Vorschule, Kindergarten und gemeinsame Lernzeit zu Hause.</p><p>Beginnen Sie heute eine liebevolle ABC-Reise.</p></section>
+<section id="features"><h2>Das ist enthalten</h2><ul><li>Buchstaben nachspuren mit richtiger Strichfolge, groß und klein</li><li>Laute und Aussprache antippen und anhören</li><li>Planeten-Herausforderungen trainieren Fokus und Gedächtnis</li><li>Montessori-inspirierter Lernstil für Eltern und Kinder</li><li>Keine Werbung, offline spielbar und sicher für Familien</li></ul></section>
+<section id="specs"><h2>Auf einen Blick</h2><table class="hd-specs"><tbody><tr><th>Erfordert</th><td>iOS 15.1+</td></tr><tr><th>Geräte</th><td>iPhone und iPad</td></tr><tr><th>Altersfreigabe</th><td>4+</td></tr><tr><th>Kategorie</th><td>Education</td></tr></tbody></table></section>
+<section id="faq"><h2>Häufige Fragen</h2><p class="hd-q" id="q-funktioniert-lumi-letters-lite-auch-ohne-internetverbindung">Funktioniert Lumi Letters Lite auch ohne Internetverbindung?</p><p class="hd-a">Ja. Im App-Store-Eintrag von Lumi Letters Lite steht, dass die eigentliche Verarbeitung auf dem Gerät stattfindet. Die App funktioniert deshalb auch im Flugmodus oder ohne Empfang. Die App herunterzuladen und einen Kauf abzuschließen, erfordert weiterhin eine Verbindung, weil beides über den App Store läuft.</p><p class="hd-q" id="q-ist-das-ein-abo">Ist das ein Abo?</p><p class="hd-a">Nein. Der App-Store-Eintrag beschreibt einen einmaligen Kauf und kein wiederkehrendes Abo. Was genau berechnet wird, können Sie vor dem Kauf jederzeit auf der App-Store-Produktseite nachlesen; laufende Abos sehen Sie unter Einstellungen → Ihr Name → Abonnements.</p><p class="hd-q" id="q-wo-landen-meine-exportierten-dateien">Wo landen meine exportierten Dateien?</p><p class="hd-a">Exporte laufen über das iOS-Teilen-Menü – das Ziel ist also das, was Sie auswählen: Dateien (Auf meinem iPhone oder iCloud Drive), Mail, Nachrichten oder eine andere App. Wenn Sie eine Datei später nicht wiederfinden, öffnen Sie die Dateien-App und sehen Sie unter „Zuletzt benutzt“ nach.</p><p class="hd-q" id="q-ich-habe-bezahlt-die-app-zeigt-aber-weiterhin-die-gesperrte-">Ich habe bezahlt, die App zeigt aber weiterhin die gesperrte Version</p><p class="hd-a">Einmalkäufe hängen an dem Apple-Account, mit dem gekauft wurde. Melden Sie sich mit genau diesem Account an (Einstellungen → Ihr Name → Medien & Käufe) und nutzen Sie dann die Wiederherstellen-Option in der App, falls vorhanden, oder installieren Sie die App über die Liste „Gekauft“ im App Store neu. Käufe mit einem anderen Apple-Account – auch dem eines Familienmitglieds – erscheinen nicht.</p><p class="hd-q" id="q-ich-habe-ein-neues-iphone-muss-ich-noch-einmal-bezahlen">Ich habe ein neues iPhone – muss ich noch einmal bezahlen?</p><p class="hd-a">Nein. Melden Sie sich auf dem neuen Gerät mit demselben Apple-Account an und laden Sie die App erneut. Der Kauf gehört zum Account, nicht zum Gerät.</p><p class="hd-q" id="q-wie-fordere-ich-eine-r-ckerstattung-an">Wie fordere ich eine Rückerstattung an?</p><p class="hd-a">Rückerstattungen für App-Store-Käufe wickelt Apple ab, nicht der Entwickler. Gehen Sie auf <a href="https://reportaproblem.apple.com" rel="nofollow noopener">reportaproblem.apple.com</a>, melden Sie sich an, suchen Sie den Kauf und wählen Sie „Rückerstattung anfordern“. Wir können eine Entscheidung von Apple weder auslösen noch beschleunigen oder aufheben – schreiben Sie uns aber gern, was schiefgelaufen ist, damit wir es beheben können.</p><p class="hd-q" id="q-wie-l-sche-ich-die-app-samt-allem-was-sie-gespeichert-hat">Wie lösche ich die App samt allem, was sie gespeichert hat?</p><p class="hd-a">App-Symbol gedrückt halten → „App entfernen“ → „App löschen“. Beim Löschen einer iOS-App verschwindet auch ihre Sandbox – die auf dem Gerät gespeicherten Dokumente und Einstellungen gehen also mit. Exportieren Sie vorher alles, was Sie behalten möchten. Was die App speichert und wo, steht in unserer <a href="https://alice51849.github.io/lumi-letters-support/privacy.html">Datenschutzerklärung</a>.</p><p class="hd-q" id="q-wie-stelle-ich-sicher-dass-ich-die-neueste-version-habe">Wie stelle ich sicher, dass ich die neueste Version habe?</p><p class="hd-a">Öffnen Sie den App Store, tippen Sie oben rechts auf Ihr Profilbild und ziehen Sie die Liste der ausstehenden Updates nach unten, um sie zu aktualisieren. Erscheint die App dort, tippen Sie auf „Update“. Mit Einstellungen → App Store → App-Updates bleibt das dauerhaft automatisch.</p><p class="hd-q" id="q-wie-verhindere-ich-dass-mein-kind-versehentlich-etwas-kauft">Wie verhindere ich, dass mein Kind versehentlich etwas kauft?</p><p class="hd-a">iOS kann das auf Systemebene blockieren, und das ist zuverlässiger als alles, was eine App tun kann: Einstellungen → Bildschirmzeit → Beschränkungen → „iTunes & App Store-Käufe“ → In-App-Käufe → Nicht erlauben. Vergeben Sie einen Bildschirmzeit-Code, der sich vom Gerätecode unterscheidet, damit Ihr Kind ihn nicht selbst aufheben kann.</p><p class="hd-q" id="q-wie-halte-ich-mein-kind-in-einer-einzigen-app">Wie halte ich mein Kind in einer einzigen App?</p><p class="hd-a">Nutzen Sie den geführten Zugriff: Einstellungen → Bedienungshilfen → Geführter Zugriff, einschalten und einen Code festlegen. Öffnen Sie danach die App und drücken Sie dreimal die Seitentaste, um das Gerät darin zu fixieren. Zum Beenden erneut dreimal drücken und den Code eingeben.</p><p class="hd-q" id="q-welche-ger-te-und-welche-ios-version-braucht-lumi-letters-li">Welche Geräte und welche iOS-Version braucht Lumi Letters Lite?</p><p class="hd-a">Sehen Sie auf der <a href="https://apps.apple.com/app/id6778748533" rel="noopener">App-Store-Produktseite</a> nach – der Abschnitt „Informationen“ dort ist immer die verbindliche, aktuelle Auskunft zu Kompatibilität, Größe und Sprachen.</p></section>
+<section id="troubleshooting"><h2>Fehlerbehebung</h2><h3>Die App startet nicht oder schließt sich sofort wieder</h3><p>Beenden Sie sie zuerst vollständig: vom unteren Bildschirmrand nach oben streichen, kurz innehalten, dann die Karte der App nach oben wegschieben. Danach erneut öffnen. Schließt sie sich weiterhin, starten Sie das Gerät neu – damit lassen sich die meisten einmaligen Startprobleme beheben.</p><h3>Die App ist langsam oder hängt bei großen Aufgaben</h3><p>Prüfen Sie den freien Speicher unter Einstellungen → Allgemein → iPhone-Speicher. Unterhalb von etwa 1 GB frei wird iOS unberechenbar, und alles, was Dateien schreibt (Export, Scans, Bildverarbeitung), leidet zuerst. Schließen Sie außerdem andere Apps, die im Hintergrund arbeiten.</p><h3>Nach einem Update sieht etwas kaputt aus</h3><p>Aktualisieren Sie zuerst iOS selbst (Einstellungen → Allgemein → Softwareupdate) und danach die App. Ein altes iOS mit einem neuen Build ist eine häufige Ursache für Layout- oder Funktionsfehler.</p><h3>Letzter Ausweg: neu installieren</h3><p>Exportieren Sie alles, was Sie behalten wollen, löschen Sie die App und installieren Sie sie über die Liste „Gekauft“ im App Store neu. Bezahlte Freischaltungen gehören zu Ihrem Apple-Account und überstehen eine Neuinstallation; Daten, die nur auf dem Gerät lagen, nicht.</p></section>
+<section id="more"><h2>Weitere Hilfeseiten desselben Entwicklers</h2><ul><li><a href="https://alice51849.github.io/ios-app-guide/de-DE/guides/lumiletters.html">Ausführlicher Ratgeber zu Lumi Letters Lite</a></li><li><a href="https://alice51849.github.io/lumi-support/help.de-DE.html">Lumi Bopomofo</a></li><li><a href="https://alice51849.github.io/lumi-weather-support/help.de-DE.html">Lumi Wetter</a></li><li><a href="https://alice51849.github.io/lumi-mission-support/help.de-DE.html">Lumi Mission Planet</a></li><li><a href="https://alice51849.github.io/lumi-math-support/help.de-DE.html">Lumi Math Planet</a></li></ul></section>
+<section id="contact"><h2>Immer noch ein Problem? Schreiben Sie uns</h2><p>Schreiben Sie an <a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a>. Damit die erste Antwort schon weiterhilft, nennen Sie bitte: Ihr Gerätemodell (Einstellungen → Allgemein → Info), Ihre iOS-Version, die App-Version und was Sie unmittelbar vor dem Problem angetippt haben. Screenshots oder eine Bildschirmaufnahme helfen sehr.</p></section>
+<p style="margin-top:2em"><a class="hd-cta" href="https://apps.apple.com/app/id6778748533" rel="noopener">Lumi Letters Lite — Im App Store ansehen</a></p>
+<nav class="hd-langs" aria-label="Diese Seite in anderen Sprachen"><strong>Diese Seite in anderen Sprachen:</strong> <a href="https://alice51849.github.io/lumi-letters-support/help.html" hreflang="en-US" lang="en-US">English</a> <a href="https://alice51849.github.io/lumi-letters-support/help.ar-SA.html" hreflang="ar-SA" lang="ar-SA">العربية</a> <a href="https://alice51849.github.io/lumi-letters-support/help.en-AU.html" hreflang="en-AU" lang="en-AU">English (AU)</a> <a href="https://alice51849.github.io/lumi-letters-support/help.en-CA.html" hreflang="en-CA" lang="en-CA">English (CA)</a> <a href="https://alice51849.github.io/lumi-letters-support/help.en-GB.html" hreflang="en-GB" lang="en-GB">English (UK)</a> <a href="https://alice51849.github.io/lumi-letters-support/help.fr-FR.html" hreflang="fr-FR" lang="fr-FR">Français</a> <a href="https://alice51849.github.io/lumi-letters-support/help.hi.html" hreflang="hi" lang="hi">हिन्दी</a> <a href="https://alice51849.github.io/lumi-letters-support/help.ja.html" hreflang="ja" lang="ja">日本語</a> <a href="https://alice51849.github.io/lumi-letters-support/help.ko.html" hreflang="ko" lang="ko">한국어</a> <a href="https://alice51849.github.io/lumi-letters-support/help.pt-BR.html" hreflang="pt-BR" lang="pt-BR">Português (BR)</a> <a href="https://alice51849.github.io/lumi-letters-support/help.th.html" hreflang="th" lang="th">ไทย</a> <a href="https://alice51849.github.io/lumi-letters-support/help.vi.html" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="https://alice51849.github.io/lumi-letters-support/help.zh-Hant.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+<p class="hd-note">Die Funktionsbeschreibungen auf dieser Seite stammen aus dem App-Store-Eintrag der App selbst. Die technischen Angaben stammen aus den öffentlichen App-Store-Daten und können sich mit jedem Update ändern. · Zuletzt aktualisiert: 2026-08-12</p>
+</main>
+<footer></footer>
+</body>
+</html>
