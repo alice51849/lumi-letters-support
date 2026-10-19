@@ -31,3 +31,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://open.cait518.cc/lumi-letters-support/sitemap.xml
+
+Sitemap: https://open.cait518.cc/lumi-letters-support/bm-sitemap.xml
