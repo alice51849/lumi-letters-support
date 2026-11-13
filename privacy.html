@@ -3,49 +3,241 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy · Lumi Letters / 隱私權政策 · 字母星球</title>
-<link rel="canonical" href="https://open.cait518.cc/lumi-letters-support/#privacy">
-<meta http-equiv="refresh" content="0; url=index.html#privacy">
-<script>location.replace("index.html#privacy");</script>
-<style>body{font-family:-apple-system,"PingFang TC",sans-serif;background:#fbfdf8;color:#3f5142;text-align:center;padding:60px 20px}a{color:#1f8b57;font-weight:700}</style>
-<!-- ls-i18n:start -->
-<link rel="alternate" hreflang="en" href="https://open.cait518.cc/lumi-letters-support/privacy.html">
-<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/lumi-letters-support/privacy.html">
-<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/lumi-letters-support/privacy.html">
-<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/lumi-letters-support/privacy.html">
-<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/lumi-letters-support/privacy.html">
-<!-- ls-i18n:end -->
-<!-- ls-appbanner:start -->
-<meta name="apple-itunes-app" content="app-id=6778748533, affiliate-data=pt=118326163&amp;ct=sup_lumiletters_own&amp;mt=8">
-<!-- ls-appbanner:end -->
-<!-- ls-clickbeacon:start -->
-<script>(function(){var E='https://office.cait518.cc/api/click';function h(e){try{var t=e.target,l=t&&t.closest&&t.closest('a[href]');if(!l||!navigator.sendBeacon)return;var u=new URL(l.href,location.href),s,k,c,q=u.searchParams;if(u.hostname==='apps.apple.com'){s='apple';k=(u.pathname.match(/\/id(\d+)/)||[])[1]||'';c=q.get('ct')||''}else if(u.hostname==='play.google.com'){s='play';var r=new URLSearchParams(q.get('referrer')||'');k=r.get('utm_campaign')||q.get('id')||'';c=r.get('utm_source')||''}else return;navigator.sendBeacon(E,JSON.stringify({p:location.pathname.slice(0,200),a:k.slice(0,100),ct:c.slice(0,64),s:s}))}catch(_){}}document.addEventListener('click',h,true);document.addEventListener('auxclick',h,true)})();</script>
-<!-- ls-clickbeacon:end -->
-<!-- ls-appld:start -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Lumi Letters Lite: ABC Kids","operatingSystem":"iOS","applicationCategory":"Education","url":"https://apps.apple.com/app/id6778748533","installUrl":"https://apps.apple.com/app/id6778748533","author":{"@type":"Organization","name":"Lumi Studio"}}</script>
-<!-- ls-appld:end -->
-<!-- ls-pwa:start -->
-<link rel="manifest" href="/lumi-letters-support/manifest.webmanifest">
-<!-- ls-pwa:end -->
-<!-- ls-sharecard:start -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Lumi Letters Lite: ABC Kids">
-<meta property="og:title" content="Privacy Policy · Lumi Letters / 隱私權政策 · 字母星球">
-<meta property="og:description" content="Lumi Letters Lite: ABC Kids — Alphabet Tracing &amp; Phonics">
-<meta property="og:url" content="https://open.cait518.cc/lumi-letters-support/#privacy">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://open.cait518.cc/lumi-letters-support/assets/og.png?v=b5cac62e78">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Lumi Letters Lite: ABC Kids — Alphabet Tracing &amp; Phonics">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="robots" content="max-image-preview:large">
-<!-- ls-sharecard:end -->
+<title>Privacy Policy · Lumi Letters Lite &amp; Lumi Letters Pro</title>
+<link rel="canonical" href="https://open.cait518.cc/lumi-letters-support/privacy.html">
+<meta name="description" content="Privacy policy for Lumi Letters Lite &amp; Lumi Letters Pro, apps made for children: no personal data collected, no ads, no tracking. COPPA / GDPR-K. Contact hourstag.app@gmail.com.">
+<link rel="icon" href="logo.png">
+<style>
+  :root{
+    --ink:#1c2a1f; --ink2:#3f5142; --muted:#7b8a7e;
+    --line:#e8efe6; --line2:#dcebd8;
+    --bg:#fbfdf8; --panel:#ffffff;
+    --green:#2fa56a; --green-ink:#1f8b57; --green-soft:#e9f8ef;
+    --gold:#e0991c; --gold-light:#f6c64e;
+    --pink:#ff8fbf; --berry:#d9558c;
+    --shadow:0 1px 2px rgba(20,40,25,.04), 0 14px 36px -18px rgba(30,110,70,.26);
+    --shadow-lg:0 3px 8px rgba(20,40,25,.06), 0 36px 70px -30px rgba(30,110,70,.38);
+    --radius:20px; --maxw:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; color:var(--ink); background:var(--bg);
+    font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI","PingFang TC","Noto Sans TC",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:16.5px; line-height:1.7; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;}
+  /* 背景飄落的半透明 ABC（呼應字母主題） */
+  .abcfall{position:fixed; inset:0; overflow:hidden; pointer-events:none; z-index:0}
+  .abcfall span{position:absolute; top:-14%; font-weight:800; color:rgba(255,200,80,0.18); font-family:"Baloo 2","PingFang TC",system-ui,sans-serif; text-shadow:0 0 14px rgba(255,190,70,.25); animation:abcdrop linear infinite}
+  @keyframes abcdrop{0%{transform:translateY(-16vh) rotate(0deg); opacity:0} 12%{opacity:1} 88%{opacity:1} 100%{transform:translateY(120vh) rotate(36deg); opacity:0}}
+  body>*:not(.abcfall){position:relative; z-index:1}
+  a{color:var(--green-ink); text-decoration:none}
+  .container{max-width:var(--maxw); margin:0 auto; padding:0 24px}
+  .zh{color:var(--muted); font-weight:500}
+  .eyebrow{font-size:.74rem; font-weight:800; letter-spacing:2.4px; text-transform:uppercase; color:var(--green); margin:0 0 12px}
+
+  @media (prefers-reduced-motion:no-preference){
+    .reveal{opacity:0; transform:translateY(16px); animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+    .d1{animation-delay:.06s}.d2{animation-delay:.15s}.d3{animation-delay:.24s}.d4{animation-delay:.33s}
+    @keyframes rise{to{opacity:1; transform:none}}
+    .float{animation:float 6s ease-in-out infinite}
+    .float.s{animation-duration:7.5s}.float.l{animation-duration:5s}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+    .twinkle{animation:tw 3.4s ease-in-out infinite}
+    @keyframes tw{0%,100%{opacity:.3; transform:scale(.82)}50%{opacity:1; transform:scale(1)}}
+  }
+
+  header.nav{position:sticky; top:0; z-index:60; background:rgba(251,253,248,.74);
+    backdrop-filter:saturate(180%) blur(16px); -webkit-backdrop-filter:saturate(180%) blur(16px); border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex; align-items:center; justify-content:space-between; height:66px}
+  .brand{display:flex; align-items:center; gap:12px}
+  .brand img{width:40px; height:40px; border-radius:12px; box-shadow:0 4px 12px -2px rgba(30,110,70,.4)}
+  .brand .name{font-weight:800; font-size:1.05rem; line-height:1.15}
+  .brand .name small{display:block; font-weight:600; font-size:.7rem; color:var(--muted); letter-spacing:.5px}
+  .nav-links{display:flex; gap:4px; align-items:center}
+  .nav-links a{color:var(--ink2); font-weight:600; font-size:.92rem; padding:9px 15px; border-radius:11px; transition:.15s}
+  .nav-links a:hover{color:var(--green-ink); background:var(--green-soft)}
+  .nav-links a.cta{color:#fff; background:linear-gradient(135deg,#46c184,var(--green)); box-shadow:0 10px 22px -10px var(--green); margin-left:6px}
+  @media (max-width:720px){ .nav-links a:not(.cta){display:none} }
+
+  .hero{position:relative; overflow:hidden; text-align:center; padding:92px 0 96px;
+    background:url("hero.png") center 30%/cover no-repeat}
+  .hero::after{content:""; position:absolute; inset:0; pointer-events:none;
+    background:radial-gradient(920px 480px at 50% 30%, rgba(255,255,255,.62), rgba(255,255,255,.14) 56%, transparent 74%),
+              linear-gradient(180deg, rgba(251,253,248,0) 58%, var(--bg) 100%)}
+  .hero .container{position:relative; z-index:2}
+  .hero .mascot{width:clamp(240px,40vw,340px); height:auto; filter:drop-shadow(0 22px 30px rgba(40,90,55,.4))}
+  .deco{position:absolute; z-index:1; pointer-events:none}
+  .deco.mush{width:78px; left:calc(50% - 230px); top:120px; filter:drop-shadow(0 10px 16px rgba(40,90,55,.3))}
+  .deco.star{width:54px; right:calc(50% - 240px); top:74px}
+  .deco.star2{width:34px; left:calc(50% - 290px); top:300px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem); line-height:1.08; margin:.2em 0 .22em; letter-spacing:-1px; font-weight:850; color:#fff; text-shadow:0 2px 22px rgba(30,70,45,.5)}
+  .hero h1 .grad{background:linear-gradient(105deg,#ffe7a0 10%,#ffd24a); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .hero h1 .zh{display:block; font-size:.42em; font-weight:700; letter-spacing:0; margin-top:.5em; color:#f3fff6; text-shadow:0 2px 14px rgba(20,50,30,.6)}
+  .hero p.sub{font-size:1.16rem; color:#f4fbf2; max-width:40em; margin:0 auto; font-weight:500; text-shadow:0 1px 12px rgba(20,50,30,.65)}
+  .hero p.sub .zh{display:block; font-size:.86rem; margin-top:8px; color:#e7f6e9}
+  .actions{display:flex; gap:13px; justify-content:center; flex-wrap:wrap; margin-top:30px}
+  .btn{display:inline-flex; align-items:center; gap:9px; font-weight:700; font-size:1rem; padding:14px 26px; border-radius:14px; transition:.16s; border:1px solid transparent; cursor:pointer}
+  .btn.primary{color:#fff; background:linear-gradient(135deg,#46c184,var(--green)); box-shadow:0 16px 34px -14px var(--green)}
+  .btn.primary:hover{transform:translateY(-2px); filter:brightness(1.05)}
+  .btn.ghost{color:var(--ink2); background:rgba(255,255,255,.9); border-color:var(--line2); box-shadow:var(--shadow)}
+  .btn.ghost:hover{border-color:#bfe0c8; color:var(--green-ink); transform:translateY(-2px)}
+
+  .trust{margin-top:-46px; position:relative; z-index:5}
+  .trust-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px}
+  .trust-card{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:22px 20px; box-shadow:var(--shadow)}
+  .trust-card .ic{width:44px; height:44px; border-radius:13px; display:grid; place-items:center; font-size:1.25rem; margin-bottom:13px; background:linear-gradient(140deg,var(--green-soft),#fff); border:1px solid var(--line2)}
+  .trust-card b{display:block; font-size:1rem}
+  .trust-card span{font-size:.82rem; color:var(--muted)}
+  @media (max-width:820px){ .trust-grid{grid-template-columns:repeat(2,1fr)} }
+
+  section.block{padding:74px 0}
+  .section-head{max-width:680px; margin:0 auto 40px; text-align:center}
+  .section-head h2{font-size:2rem; margin:0 0 .2em; letter-spacing:-.5px; font-weight:850}
+  .section-head h2 .zh{font-size:.6em; font-weight:700}
+  .section-head p{color:var(--muted); margin:0}
+
+  .values{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+  .value{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:28px 26px; box-shadow:var(--shadow); transition:.18s}
+  .value:hover{transform:translateY(-4px); box-shadow:var(--shadow-lg); border-color:#cfe7d4}
+  .value .ic{font-size:1.7rem; margin-bottom:14px}
+  .value h3{margin:0 0 6px; font-size:1.18rem}
+  .value p{margin:0; color:var(--ink2); font-size:.95rem}
+  .value p .zh{display:block; color:var(--muted); font-size:.84rem; margin-top:5px}
+  @media (max-width:820px){ .values{grid-template-columns:1fr} }
+
+  .contact-card{display:flex; align-items:center; justify-content:space-between; gap:30px; flex-wrap:wrap;
+    background:linear-gradient(135deg,#fff,#f4fbf3); border:1px solid var(--line2); border-radius:26px; padding:38px 40px; box-shadow:var(--shadow-lg)}
+  .contact-card .txt h3{margin:0 0 6px; font-size:1.3rem}
+  .contact-card .txt p{margin:0; color:var(--ink2); font-size:.97rem}
+  .contact-card .txt p .zh{display:block; font-size:.84rem; margin-top:4px}
+  .mailrow{display:flex; align-items:center; gap:10px; margin-top:15px; font-weight:600; color:var(--ink2); font-size:.9rem}
+  .mailrow .dot{width:9px; height:9px; border-radius:50%; background:#27c08a; box-shadow:0 0 0 4px #27c08a22}
+
+  .faq{max-width:840px; margin:0 auto; display:grid; gap:13px}
+  details.qa{background:var(--panel); border:1px solid var(--line2); border-radius:15px; padding:0 22px; box-shadow:var(--shadow); transition:border-color .15s}
+  details.qa[open]{border-color:#c9e6d0}
+  details.qa summary{list-style:none; cursor:pointer; padding:19px 0; font-weight:700; font-size:1.05rem; display:flex; align-items:center; justify-content:space-between; gap:16px}
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary .q .zh{display:block; font-weight:500; font-size:.82rem; margin-top:2px}
+  details.qa summary .plus{flex:0 0 27px; width:27px; height:27px; border-radius:9px; border:1px solid var(--line2); display:grid; place-items:center; color:var(--green); font-size:1.15rem; transition:.2s; background:#f6fcf7}
+  details.qa[open] summary .plus{transform:rotate(45deg); background:var(--green); color:#fff; border-color:var(--green)}
+  details.qa .body{padding:0 0 20px; color:var(--ink2); font-size:.97rem}
+  details.qa .body .zh{display:block; color:var(--muted); font-size:.86rem; margin-top:8px}
+
+  .privacy-wrap{max-width:880px; margin:0 auto; background:var(--panel); border:1px solid var(--line2); border-radius:26px; box-shadow:var(--shadow-lg); overflow:hidden}
+  .privacy-top{padding:32px 38px; border-bottom:1px solid var(--line); background:linear-gradient(135deg,#f4fbf3,#fff)}
+  .privacy-top .meta{display:inline-flex; align-items:center; gap:8px; font-size:.8rem; color:var(--muted); font-weight:600; background:#fff; border:1px solid var(--line2); padding:6px 13px; border-radius:999px}
+  .privacy-top h2{margin:14px 0 4px; font-size:1.6rem; letter-spacing:-.4px}
+  .pill-list{list-style:none; padding:0; margin:18px 0 0; display:grid; grid-template-columns:repeat(2,1fr); gap:13px}
+  .pill-list li{display:flex; gap:11px; align-items:flex-start; font-size:.94rem}
+  .pill-list .chk{flex:0 0 22px; width:22px; height:22px; border-radius:50%; display:grid; place-items:center; background:#e9faf3; color:#1f9d6b; font-weight:900; font-size:.78rem; margin-top:2px}
+  .pill-list .zh{color:var(--muted); font-size:.82rem}
+  .privacy-body{padding:34px 38px}
+  .privacy-body h3{font-size:1.08rem; margin:28px 0 5px; font-weight:800; display:flex; align-items:center; gap:10px}
+  .privacy-body h3:first-child{margin-top:0}
+  .privacy-body h3 .num{font-size:.72rem; color:var(--green); border:1px solid var(--line2); border-radius:7px; padding:2px 8px; font-weight:800}
+  .privacy-body p{color:var(--ink2); margin:.2em 0 0; font-size:.96rem}
+  .privacy-body p .zh{display:block; color:var(--muted); font-size:.85rem; margin-top:5px}
+  @media (max-width:680px){ .pill-list{grid-template-columns:1fr} .privacy-top,.privacy-body{padding:26px 22px} }
+
+  footer.site{border-top:1px solid var(--line); margin-top:30px; background:#fff}
+  .foot-inner{display:flex; justify-content:space-between; gap:34px; flex-wrap:wrap; padding:46px 0 34px}
+  .foot-brand{max-width:360px}
+  .foot-brand .lock{display:flex; align-items:center; gap:11px; margin-bottom:13px}
+  .foot-brand .lock img{width:34px; height:34px; border-radius:10px}
+  .foot-brand .lock b{font-weight:800; font-size:1.05rem}
+  .foot-brand p{color:var(--muted); font-size:.88rem; margin:0}
+  .foot-col h4{font-size:.74rem; letter-spacing:1.3px; text-transform:uppercase; color:var(--muted); margin:0 0 13px}
+  .foot-col a, .foot-col span{display:block; color:var(--ink2); font-size:.92rem; padding:4px 0}
+  .foot-col a:hover{color:var(--green-ink)}
+  .foot-bottom{border-top:1px solid var(--line); padding:20px 0; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; color:var(--muted); font-size:.82rem}
+</style>
 </head>
 <body>
-<p>Redirecting to our Privacy Policy… / 正在前往隱私權政策…</p>
-<p><a href="index.html#privacy">Tap here if you are not redirected. / 若未自動跳轉，請點此。</a></p>
-<!-- ls-family:start --><section aria-label="More apps from the same developer" style="max-width:1060px;margin:34px auto 26px;padding:20px 22px;background:rgba(127,127,127,.08);background:color-mix(in srgb, currentColor 7%, transparent);border:1px solid rgba(127,127,127,.18);border-color:color-mix(in srgb, currentColor 16%, transparent);border-radius:20px;font-family:inherit;color:inherit;text-align:left"><h2 style="margin:0 0 14px;font-size:17px;color:inherit">More apps from the same developer</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px"><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><a href="https://apps.apple.com/app/id6773017109?pt=118326163&amp;ct=sup_lumiletters&amp;mt=8" rel="noopener" style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:rgba(127,127,127,.10);background:color-mix(in srgb, currentColor 9%, transparent);border:1px solid rgba(127,127,127,.22);border-color:color-mix(in srgb, currentColor 20%, transparent);border-radius:16px;text-decoration:none;color:inherit;min-width:0;text-align:left"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/71/45/0d/71450d8c-dc8f-19db-8a10-b3e5d6460621/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg" alt="" width="46" height="46" loading="lazy" style="border-radius:11px;flex:0 0 auto" /><span style="min-width:0"><strong style="display:block;font-size:14px;line-height:1.35">Lumi Bopomofo: Learn Zhuyin</strong><span style="display:block;font-size:12px;line-height:1.4;opacity:.72">Free · one-time purchase to unlock, no subscription</span><span style="display:block;font-size:12px;line-height:1.4;opacity:.72">View on the App Store</span></span></a><a href="https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&amp;referrer=utm_source%3Dsup_lumiletters%26utm_campaign%3Dlumibopomofo" rel="noopener" data-ls-play="card" style="font-size:12px;opacity:.72;color:inherit;text-decoration:underline;padding-left:14px">Google Play</a></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><a href="https://apps.apple.com/app/id6779750237?pt=118326163&amp;ct=sup_lumiletters&amp;mt=8" rel="noopener" style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:rgba(127,127,127,.10);background:color-mix(in srgb, currentColor 9%, transparent);border:1px solid rgba(127,127,127,.22);border-color:color-mix(in srgb, currentColor 20%, transparent);border-radius:16px;text-decoration:none;color:inherit;min-width:0;text-align:left"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6e/0d/e3/6e0de316-5f5a-539d-b8a3-4187f5abe6ed/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg" alt="" width="46" height="46" loading="lazy" style="border-radius:11px;flex:0 0 auto" /><span style="min-width:0"><strong style="display:block;font-size:14px;line-height:1.35">Lumi Mission: Reward Chart</strong><span style="display:block;font-size:12px;line-height:1.4;opacity:.72">Free · one-time purchase to unlock, no subscription</span><span style="display:block;font-size:12px;line-height:1.4;opacity:.72">View on the App Store</span></span></a><a href="https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite&amp;referrer=utm_source%3Dsup_lumiletters%26utm_campaign%3Dlumimission" rel="noopener" data-ls-play="card" style="font-size:12px;opacity:.72;color:inherit;text-decoration:underline;padding-left:14px">Google Play</a></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><a href="https://apps.apple.com/app/id6778269699?pt=118326163&amp;ct=sup_lumiletters&amp;mt=8" rel="noopener" style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:rgba(127,127,127,.10);background:color-mix(in srgb, currentColor 9%, transparent);border:1px solid rgba(127,127,127,.22);border-color:color-mix(in srgb, currentColor 20%, transparent);border-radius:16px;text-decoration:none;color:inherit;min-width:0;text-align:left"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3b/8b/99/3b8b9998-c4a6-b17f-b0e7-ceabde29eaac/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg" alt="" width="46" height="46" loading="lazy" style="border-radius:11px;flex:0 0 auto" /><span style="min-width:0"><strong style="display:block;font-size:14px;line-height:1.35">Lumi Math Planet: Explorer</strong><span style="display:block;font-size:12px;line-height:1.4;opacity:.72">Free · one-time purchase to unlock, no subscription</span><span style="display:block;font-size:12px;line-height:1.4;opacity:.72">View on the App Store</span></span></a><a href="https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree&amp;referrer=utm_source%3Dsup_lumiletters%26utm_campaign%3Dlumimath" rel="noopener" data-ls-play="card" style="font-size:12px;opacity:.72;color:inherit;text-decoration:underline;padding-left:14px">Google Play</a></div><div style="display:flex;flex-direction:column;gap:4px;min-width:0"><a href="https://apps.apple.com/app/id6778491147?pt=118326163&amp;ct=sup_lumiletters&amp;mt=8" rel="noopener" style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:rgba(127,127,127,.10);background:color-mix(in srgb, currentColor 9%, transparent);border:1px solid rgba(127,127,127,.22);border-color:color-mix(in srgb, currentColor 20%, transparent);border-radius:16px;text-decoration:none;color:inherit;min-width:0;text-align:left"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/78/b9/64/78b96440-3111-ad38-d78e-45aa11ab560d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg" alt="" width="46" height="46" loading="lazy" style="border-radius:11px;flex:0 0 auto" /><span style="min-width:0"><strong style="display:block;font-size:14px;line-height:1.35">Lumi Letters Pro: Kids Phonics</strong><span style="display:block;font-size:12px;line-height:1.4;opacity:.72">$8.99</span><span style="display:block;font-size:12px;line-height:1.4;opacity:.72">View on the App Store</span></span></a><a href="https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters&amp;referrer=utm_source%3Dsup_lumiletters%26utm_campaign%3Dlumiletterspro" rel="noopener" data-ls-play="card" style="font-size:12px;opacity:.72;color:inherit;text-decoration:underline;padding-left:14px">Google Play</a></div></div><p style="margin:10px 0 0;font-size:12px;opacity:.66">Links open the App Store.</p><p style="margin:6px 0 0;font-size:12px;opacity:.72">Android: <a href="https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&amp;referrer=utm_source%3Dsup_lumiletters_own%26utm_campaign%3Dlumiletters" rel="noopener" data-ls-play="own" style="font-size:12px;opacity:.72;color:inherit;text-decoration:underline;">Google Play</a></p><p style="margin:6px 0 0;font-size:12px;opacity:.72"><a href="https://apps.apple.com/app/id6778748533?action=write-review" rel="noopener" data-app-store-review="owner" style="color:inherit;text-decoration:underline">Already using this app? Rate or review it on the App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite&amp;showAllReviews=true" rel="nofollow noopener" data-play-review="owner" style="color:inherit;text-decoration:underline">Google Play</a></p><p style="margin:6px 0 0;font-size:12px;opacity:.66;line-height:1.7"><a href="https://open.cait518.cc/ios-app-guide/en-US/?utm_source=support_site&amp;utm_medium=family_module&amp;utm_campaign=sup_lumiletters" rel="noopener" style="color:inherit;text-decoration:underline">More app guides &amp; how-tos</a> · <a href="https://open.cait518.cc/ios-app-guide/en-US/tools/private-pay-once-iphone-app-finder.html?utm_source=support_site&amp;utm_medium=family_module&amp;utm_campaign=sup_lumiletters" rel="noopener" style="color:inherit;text-decoration:underline">Private &amp; Pay-Once iPhone App Finder</a> · <a href="https://open.cait518.cc/ios-app-guide/en-US/hubs/lumiletters.html?utm_source=support_site&amp;utm_medium=family_module&amp;utm_campaign=sup_lumiletters" rel="noopener" style="color:inherit;text-decoration:underline">Lumi Letters Lite: ABC Kids · Questions</a></p></section><!-- ls-family:end -->
+<header class="nav">
+  <div class="container nav-inner">
+    <div class="brand">
+      <img src="logo.png" alt="Lumi Letters">
+      <div class="name">Lumi Letters<small>Support Center · 字母星球</small></div>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <!--email_off--><a class="cta" href="mailto:hourstag.app@gmail.com">Contact</a><!--/email_off-->
+    </nav>
+  </div>
+</header>
+<main>
+<section class="block" id="privacy" style="padding-top:0">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Your family’s privacy</p>
+      <h2>Privacy Policy <span class="zh">隱私權政策</span></h2>
+    </div>
+    <div class="privacy-wrap reveal d1">
+      <div class="privacy-top">
+        <span class="meta">🛡️ Last updated 2026-06-06 · 最後更新</span>
+        <h2>The short version: we collect nothing.</h2>
+        <p style="color:var(--ink2);margin:.4em 0 0">Lumi Letters is built for children. It works fully offline and does not collect, store, or share any personal information — from you or your child. This policy covers the iOS editions on the App Store and the Android editions on Google Play alike.<span class="zh">Lumi 字母星球為兒童打造，完全離線運作，不收集、不儲存、不分享任何個人資訊。本政策同時適用於 App Store(iOS)與 Google Play(Android)上的版本。</span></p>
+        <ul class="pill-list">
+          <li><span class="chk">✓</span><div>No data collection<span class="zh">不收集資料</span></div></li>
+          <li><span class="chk">✓</span><div>No third-party ads<span class="zh">無第三方廣告</span></div></li>
+          <li><span class="chk">✓</span><div>No tracking or analytics<span class="zh">無追蹤與分析</span></div></li>
+          <li><span class="chk">✓</span><div>No account, works offline<span class="zh">免註冊、離線可玩</span></div></li>
+        </ul>
+      </div>
+      <div class="privacy-body">
+        <h3><span class="num">01</span> Information we collect</h3>
+        <p>None. The app does not ask for, collect, or transmit any personal data such as names, emails, photos, contacts, or location. There is no login and no user account.<span class="zh">沒有。本 app 不會要求、收集或傳送任何個人資料，包括姓名、電子郵件、照片、通訊錄或位置，也沒有登入或帳號。</span></p>
+        <h3><span class="num">02</span> Where your child’s progress is stored</h3>
+        <p>Learning progress and settings are saved only on your own device. They never leave the device and are never sent to us or anyone else. Deleting the app deletes this data.<span class="zh">學習進度與設定只儲存在您的裝置上，絕不離開裝置，也不會傳給我們或任何第三方；刪除 app 即移除。</span></p>
+        <h3><span class="num">03</span> Advertising &amp; analytics</h3>
+        <p>There are no third-party ads, no behavioural advertising, and no analytics or tracking SDKs in this app.<span class="zh">本 app 沒有任何第三方廣告、行為式廣告，也沒有分析或追蹤 SDK。</span></p>
+        <h3><span class="num">04</span> Children’s privacy (COPPA / GDPR-K)</h3>
+        <p>This app is made for children and complies with the U.S. COPPA and the EU GDPR provisions for children. Because we collect no personal information at all, nothing is ever disclosed to third parties and no data leaves the device.<span class="zh">本 app 為兒童設計，符合美國 COPPA 與歐盟 GDPR 兒童規範。由於完全不收集個人資訊，沒有任何資料分享給第三方，也沒有資料離開裝置。</span></p>
+        <h3><span class="num">05</span> External links &amp; purchases</h3>
+        <p>The app contains no advertising links. Any external links are placed behind a parent gate. Optional purchases, if available, are handled securely by Apple’s App Store on iPhone and iPad, and by Google Play on Android; we never see your payment details, and we never receive your Apple Account or Google Account. A purchase can be restored on a new device by signing in with the same account you bought it with.<span class="zh">app 內無廣告連結；任何外部連結皆在家長關卡之後。若有選購項目，在 iPhone 與 iPad 上皆由 Apple App Store 安全處理，在 Android 上則由 Google Play 處理，我們不會看到您的付款資訊，也不會收到您的 Apple 帳號或 Google 帳號。換新裝置時，用原本購買的帳號登入即可回復購買。</span></p>
+        <h3><span class="num">06</span> Permissions</h3>
+        <p>The app asks for no sensitive permissions on either platform — no camera, microphone, location, contacts, photos or notifications. On Android it never asks you to grant a runtime permission; it uses internet access only so that Google Play can process a purchase or show the optional rating prompt, plus vibration for gentle haptic feedback. Audio playback and speech run entirely on the device.<span class="zh">本 app 在 iOS 與 Android 上都不要求任何敏感權限——沒有相機、麥克風、定位、通訊錄、照片或通知。Android 版從不要求您授予任何執行階段權限，網路連線僅供 Google Play 處理購買與顯示選用的評分提示，另使用震動提供輕微的觸覺回饋；音訊播放與語音合成皆於裝置本機運作。</span></p>
+        <h3><span class="num">07</span> Changes &amp; contact</h3>
+        <p>If this policy changes, the updated version will be posted here with a new date. Questions? Email <!--email_off--><a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a><!--/email_off-->.<span class="zh">若政策變更，將於此頁公布更新版本並標註新日期。有問題請來信 <!--email_off-->hourstag.app@gmail.com<!--/email_off-->。</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="parents" style="padding-top:0">
+  <div class="container">
+    <div class="privacy-wrap" style="padding:26px 28px">
+      <h2 style="margin-top:0">For parents: children's privacy at a glance <span class="zh" style="display:block;font-size:.8em">給家長：兒童隱私重點</span></h2>
+      <p>This is a summary of the policy above. It adds no new practice and does not change it.
+        <span class="zh">以下是上方政策的重點整理，沒有新增或變更任何做法。</span></p>
+      <h3>What information is collected from my child?</h3>
+      <p>None. The app does not ask for, collect, transmit, sell or share any personal information from children or parents. There are no accounts and no sign-in. Learning progress and settings, and anything your child creates or enters in the app, stay only on your device and are removed when you delete the app.
+        <span class="zh">沒有。App 不會向孩子或家長要求、蒐集、傳送、販售或分享任何個人資訊；沒有帳號、不需登入。學習進度、設定，以及孩子在 App 內建立或輸入的內容，都只存在你的裝置上，刪除 App 時一併移除。</span></p>
+      <h3>Advertising and tracking</h3>
+      <p>No advertising of any kind, no behavioral advertising, no analytics, no tracking and no third-party SDKs that collect data. The app does not track your child across other companies' apps or websites.
+        <span class="zh">沒有任何廣告、沒有行為式廣告、沒有數據分析、沒有追蹤，也沒有會蒐集資料的第三方 SDK；App 不會跨其他公司的 App 或網站追蹤孩子。</span></p>
+      <h3>COPPA and GDPR-K</h3>
+      <p>Because no personal information is collected from children, no parental consent for data collection is needed, nothing is disclosed to third parties, and the app is designed to comply with the U.S. Children's Online Privacy Protection Act (COPPA) and the children's provisions of the EU General Data Protection Regulation (GDPR-K). Purchases and links that lead outside the app are meant for parents and are handled as described above.
+        <span class="zh">由於不向兒童蒐集任何個人資訊，因此不需要為資料蒐集取得家長同意，也沒有任何資料揭露給第三方；本 App 依美國《兒童線上隱私保護法》（COPPA）與歐盟 GDPR 兒童條款（GDPR-K）設計。購買與離開 App 的連結是給家長使用，處理方式如上方政策所述。</span></p>
+      <h3>Your rights as a parent</h3>
+      <p>We hold no personal information about you or your child, so there is nothing on our side to review, export or delete. You can erase everything the app stored at any time by deleting the app from the device. If you have any question or request about your child's privacy, contact us and we will reply.
+        <span class="zh">我們沒有保存任何關於你或孩子的個人資訊，因此在我們這端沒有可供查閱、匯出或刪除的資料。你隨時可以從裝置刪除 App，以清除 App 儲存的所有內容。若對孩子的隱私有任何問題或要求，歡迎與我們聯絡，我們會回覆。</span></p>
+      <h3>Contact</h3>
+      <p>Developer: Cait518 · Email: <!--email_off--><a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a><!--/email_off-->
+        <span class="zh">開發者：Cait518 · 電子郵件：<!--email_off-->hourstag.app@gmail.com<!--/email_off--></span></p>
+      <h3>About this website</h3>
+      <p>This support website does not set cookies and does not ask for personal information. It may count clicks on its App Store and Google Play download links anonymously, without cookies or identifiers.
+        <span class="zh">本支援網站不設定 cookie，也不要求任何個人資訊；網站可能以匿名方式計算 App Store 與 Google Play 下載連結的點擊次數，不使用 cookie 或任何識別碼。</span></p>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer style="text-align:center;padding:24px 16px 40px;font-size:.85rem;opacity:.75">
+  <p><a href="index.html">Support center</a> · <a href="privacy.html">Privacy Policy</a> · <!--email_off--><a href="mailto:hourstag.app@gmail.com">hourstag.app@gmail.com</a><!--/email_off--></p>
+  <p>© 2026 Cait518 · Standalone privacy policy page published 2026-11-14 (policy content unchanged).</p>
+</footer>
 </body>
 </html>
