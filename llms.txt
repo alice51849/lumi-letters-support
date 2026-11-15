@@ -18,3 +18,10 @@
 ## Portfolio
 
 - [All public iOS apps](https://alice51849.github.io/ios-app-guide/apps/index.html)
+
+## About the app (AI-readable Q&A pages)
+
+- [Lumi Letters Lite: ABC Kids — about this app (en): what it is, who it is for, pricing, comparison and FAQ](https://open.cait518.cc/lumi-letters-support/about-lumi-letters-app.html)
+- [Lumi 字母星球 Lite：兒童英文ABC遊戲 — about this app (zh-Hant): what it is, who it is for, pricing, comparison and FAQ](https://open.cait518.cc/lumi-letters-support/about-lumi-letters-app.zh-Hant.html)
+- [Lumi Letters Lite: ABC Kids — about this app (pt-BR): what it is, who it is for, pricing, comparison and FAQ](https://open.cait518.cc/lumi-letters-support/about-lumi-letters-app.pt-BR.html)
+- [Lumi Letters Lite: ABC Kids — about this app (tr): what it is, who it is for, pricing, comparison and FAQ](https://open.cait518.cc/lumi-letters-support/about-lumi-letters-app.tr.html)
